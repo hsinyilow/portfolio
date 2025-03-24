@@ -131,6 +131,10 @@ iframe {
   border-radius: 10px;
 }
 
+.nav-toggle {
+  width: 30px;
+}
+
 .background-grey {
   background-color: #fbfbfb;
 }
