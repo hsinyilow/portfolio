@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../style/css/style.css" />
+    <script src="../js/functionalities.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="margin: 0px 3%">
+          <a class="navbar-brand">Hsin Yi's portfolio</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('index')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('gamedev')">Game Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="openPage('webdev')">Web Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('otherprojects')">Other Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('about')">About | Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- Webdev banner -->
+      <div class="container-fluid section-padding-banner" style="background-color: aliceblue;   text-align: center;">
+        <h2>Web development</h2>
+        <p>All of the works here were done during my internship at Terresquall, where I had learnt some basics of web development.
+            I had enjoyed the learning process and had became more comfortable with HTML, CSS and JavaScript.
+            Here are the main projects I had worked on during that period of time.</p>
+      </div>
+      
+      <!-- Introduction -->
+      <div class="container-fluid section-padding-md background-grey align-items-center" style="text-align: center;">
+        <img src="../../resources/images/terresquall-logo.png" style="display: block; margin:auto; width: 250px;" class="img-fluid" alt="Terresquall logo"/>
+        <p>I interned at Terresquall for 6 months during polytechnic and currently freelancing with them occassionally to work on some website projects</p>
+      </div>
+
+      <!-- Vallous website -->
+      <div class="container-fluid section-padding-md background-grey">
+        <div class="row align-items-center">
+          <div class="col">
+              <h4>Vallous Client Project</h4>
+              <p>This was the first and main web project of my internship. 
+                I was tasked with helping to design parts of the website layout in WordPress using Elementor, 
+                with any additional styles added using CSS.</p>
+          </div>
+          <div class="col">
+            <div id="vallous" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../resources/images/vallous-main.jpg" class="img-fluid image-colour" alt="Vallous main"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/vallous-about-us.jpg" class="img-fluid image-colour" alt="Vallous about us"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/vallous-our-partners.jpg" class="img-fluid image-colour" alt="Vallous partners"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/vallous-contact-us.jpg" class="img-fluid image-colour" alt="Vallous contact us"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-indicator" id="vallous-nav">
+              <button onclick="activateSlide('vallous-nav', this)" type="button" data-bs-target="#vallous" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button onclick="activateSlide('vallous-nav', this)" data-bs-target="#vallous" data-bs-slide-to="1" aria-current="false"></button>
+              <button onclick="activateSlide('vallous-nav', this)" data-bs-target="#vallous" data-bs-slide-to="2" aria-current="false"></button>
+              <button onclick="activateSlide('vallous-nav', this)" data-bs-target="#vallous" data-bs-slide-to="3" aria-current="false"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- divider -->
+      <div class="divider background-grey">
+        <hr class="solid">
+      </div>
+
+      <!-- Password Generator -->
+      <div class="container-fluid section-padding-md background-grey">
+        <div class="row align-items-center">
+          <div class="col">
+            <img src="../../resources/images/namecards-4.jpg" class="img-fluid image-colour" alt="Namecards 4"/>
+          </div>
+
+          <div class="col">
+              <h4>Password Generator</h4>
+              <p>This is a random password generator app made using JavaScript with backbone.js. The app layout was also completed by me using HTML, CSS and Bootstrap.</p>
+              <a href="https://www.terresquall.com/apps/password-generator/" type="button" class="btn btn-purple"> Try it out</a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- divider -->
+      <div class="divider background-grey">
+        <hr class="solid">
+      </div>
+
+      <!-- Online namecards -->
+      <div class="container-fluid section-padding-md background-grey">
+        <div class="row align-items-center">
+          <div class="col">
+              <h4>Online Namecards</h4>
+              <p>For this project, I was tasked to recreate online name cards layouts from reference images.</p>
+          </div>
+          <div class="col">
+            <div id="webdev" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../resources/images/namecards-all.gif" class="img-fluid image-colour" alt="Namecards all"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/namecards-1.jpg" class="img-fluid image-colour" alt="Namecards 1"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/namecards-2.jpg" class="img-fluid image-colour" alt="Namecards 2"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/namecards-3.jpg" class="img-fluid image-colour" alt="Namecards 3"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/namecards-4.jpg" class="img-fluid image-colour" alt="Namecards 4"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-indicator" id="webdev-nav">
+              <button onclick="activateSlide('webdev-nav', this)" type="button" data-bs-target="#webdev" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button onclick="activateSlide('webdev-nav', this)" data-bs-target="#webdev" data-bs-slide-to="1" aria-current="false"></button>
+              <button onclick="activateSlide('webdev-nav', this)" data-bs-target="#webdev" data-bs-slide-to="2" aria-current="false"></button>
+              <button onclick="activateSlide('webdev-nav', this)" data-bs-target="#webdev" data-bs-slide-to="3" aria-current="false"></button>
+              <button onclick="activateSlide('webdev-nav', this)" data-bs-target="#webdev" data-bs-slide-to="4" aria-current="false"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- divider -->
+      <div class="divider background-grey">
+        <hr class="solid">
+      </div>
+
+      <!-- Video editing -->
+      <div class="container-fluid section-padding-md background-grey">
+        <div class="row align-items-center">
+          
+          <div class="col">
+            <div class="ratio ratio-16x9"> 
+              <iframe src="https://www.youtube.com/embed/Nd4vKyDGidY?si=p8oaaNgn_DjqOT3u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col">
+              <h4>Video Editing</h4>
+              <p>During my internship, I had also picked up basic video editing skills using the Da Vinci video editing software.</p>
+              <p>I edited part 10 - 14 of my colleague Harvest Moon series as well as created my own series (Bounce Tales) on Terresquall's YouTube channel. Lastly, I helped to create  a video on a shader used during the Terminus game project.</p>
+              <a href="https://www.youtube.com/playlist?list=PLnlYLb0O2VSS3KvAhxNSsVPv4HWyjdbCm" type="button" class="btn btn-purple">View full playlist</a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="container-fluid footer">
+      <span>&#169; Hsin Yi 2025</span>
+    </footer>
+  </body>
+</html>

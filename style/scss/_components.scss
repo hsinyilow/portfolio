@@ -1,0 +1,108 @@
+@use '_variables.scss' as *;
+
+.btn-purple{
+    background-color: $purple;
+    color: white;
+    border: 2px solid $purple;
+    border-radius: 15px;
+    &:visited{
+        background-color: $purple;
+        color: white;
+        border: 2px solid $purple;
+        border-radius: 15px;
+    }
+
+
+    &:hover, &:focus{
+        background-color: $purple-hover;
+        color: white;
+        border-color: $purple-hover;
+    }
+}
+
+nav{
+    &.bg-body-tertiary {
+        background-color: $dark-grey !important;
+    }
+    
+    .nav-link{
+        color: white;
+
+        &:visited{
+            color: white;
+        }
+
+        &:hover, &:focus{
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-brand{
+        color: white;
+        &:hover, &:focus, &:visited{
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .navbar-nav .nav-link.active{
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.divider {
+    padding: 25px;
+    >hr {
+        margin: auto;
+        width: 36%;
+        color: $purple-hover;
+        border-top-width: 1.5px;
+    }
+}
+
+.footer{
+    background-color: $dark-grey;
+    height: 75px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    color: white;
+}
+
+.carousel-indicator {
+    display: flex;
+    justify-content: center;
+}
+  
+.carousel-indicator > button {
+width: calc(30% / 3 - 10px);
+margin: 5px 10px;
+border-radius: 15px;
+padding: 2px;
+border-color: $purple;
+z-index: 100;
+}
+.carousel-indicator > button.active{
+background-color: $purple;
+}
+
+img {
+    &.image-colour {
+        border: 2px solid #9067C6;
+        border-radius: 10px;
+        box-shadow: #22222221 2px 2px;
+        max-height: 300px;
+    }
+
+    &.logo {
+        width: 50px;
+    }
+}
+
+iframe {
+    border-radius: 10px;
+}

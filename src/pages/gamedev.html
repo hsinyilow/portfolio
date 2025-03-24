@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../../style/css/style.css" />
+    <script src="../js/functionalities.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="margin: 0px 3%">
+          <a class="navbar-brand">Hsin Yi's portfolio</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" style="margin-left: auto;">
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('index')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="openPage('gamedev')">Game Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('webdev')">Web Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('otherprojects')">Other Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="openPage('about')">About | Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- Intro banner -->
+      <div class="container-fluid section-padding-banner" style="background-color: aliceblue; text-align: center;">
+          <h2>Game projects</h2>
+          <p>I enjoyed the experience of working in both teams and doing solo work to develop both 2D and 3D games of varying genres for different platforms. </p>
+      </div>
+      
+      <!-- First section: team game projects -->
+      <div class="container-fluid section-padding-lg background-grey">
+        <h3 style="text-align: center;">Team Projects</h3>
+        
+        <!-- Convalescence -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+              <h4>Convalescence</h4>
+              <p>
+                Convalescence is an 2D bullet hell game developed by 6 members. It follows the story of Bren's journey in fighting her inner demons.
+              </p>
+              <p>Role: Lead programmer - in charge of LevelManager & GameManager, Player
+              </p>
+              <a href="../../resources/files/Convalescence-GDD.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-purple">View GDD</a>
+          </div>
+          <div class="col">
+              <div class="ratio ratio-16x9"> 
+                <iframe src="https://www.youtube.com/embed/W_goxRZf3WU" title="Convalescence full gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- Terminus -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+            <div class="ratio ratio-16x9"> 
+              <iframe src="https://www.youtube.com/embed/PKKicaMCH-A" title="Terminus Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+            </div>
+          </div>
+
+          <div class="col">
+              <h4>Terminus</h4>
+              <p>Exploring the concept of a cyber world, my team has created a  3D tower defense game, where you need to defend the firewall from enemies of various forms.</p>
+              <p>Role: Lead programmer - in charge of Managers, Enemies</p>
+              <a href="../../resources/files/Terminus-GDD.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-purple">View GDD</a>
+          </div>
+
+        </div>
+
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- Overclocked -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+              <h4>Overclocked</h4>
+              <p>For our Final Year Project, my team came together once again to tackle a new challenge from a client. In this cross-platform game, a VR and PC player will need to work together to protect the space station from an alien infestation.</p>
+              <p>Client: SFX Corporation. Plugin used: RealityTransform</p>
+              <p>Role: Lead programmer - enemies, UI, managers, some networking</p>
+              <a href="../../resources/files/Overclocked-GDD.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-purple">View GDD</a>
+          </div>
+          <div class="col">
+              <img src="../../resources/images/overclocked-splash.jpg" class="img-fluid image-colour" alt="Overclocked splash"/>
+          </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- Lazer Tag -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+            <div class="ratio ratio-16x9"> 
+              <iframe src="https://www.youtube.com/embed/3OobAZg7KeE" title="Laser Tag Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+            </div>
+          </div>
+
+          <div class="col">
+              <h4>Laser Tag</h4>
+              <p>Inspired by a minigame in It Takes 2, my partner and I decided to mimic the game in our first attempt at creating a local multiplayer game.</p>
+              <p>Role: Programmer - player controls</p>
+          </div>
+
+        </div>
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- stay on track -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+              <h4>Stay On Track</h4>
+              <p>
+                Using Pun 2,  I worked with a partner to  created this 3D party game for an online multiplayer game assignment. The main inspiration and reference for this game is Unrailed.
+              </p>
+              <p>Role: Programmer - networking, train, UI</p>
+          </div>
+          <div class="col">
+              <div class="ratio ratio-16x9"> 
+                <iframe width="438" height="247" src="https://www.youtube.com/embed/1JWatO7Bvx0" title="Stay On Track Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second section: solo game projectss -->
+      <div class="container-fluid section-padding-lg background-tint">
+        <h3 style="text-align: center;">Solo Projects</h3>
+        
+        <!-- Notes and dots -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+            <div class="ratio ratio-16x9"> 
+              <iframe src="https://www.youtube.com/embed/K85Stpj5vEc?si=RAqGH0gsI-PVqlB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col">
+              <h4>Notes and Dots</h4>
+              <p>Influenced by my love for music, this is a 2D physics based android 
+                  game where the player needs to draw lines to get the "note" to the end.
+              </p>
+          </div>
+
+        </div>
+
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- While() -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+              <h4>While()</h4>
+              <p>For a non-immersive VR assignment, I decided to try to make an escape room type of game, where the player's goal is to escape the loop.</p>
+              <button onclick="" type="button" class="btn btn-purple">View GDD</button>
+          </div>
+          <div class="col">
+            <div class="ratio ratio-16x9"> 
+              <iframe src="https://www.youtube.com/embed/JwaLPe9Surg" title="While() Gameplay Recording" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- Endless Runner -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+            <div class="ratio ratio-16x9"> 
+              <iframe src="https://www.youtube.com/embed/XPn0Ie1OgYo" title="Endless Runner Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col">
+              <h4>Endless Runner</h4>
+              <p>Although it is a  generic endless runner game, this is a unique project for me as I had developed it using Unreal Engine blueprints instead of Unity.</p>
+          </div>
+
+        </div>
+
+        <!-- divider -->
+        <div class="divider">
+          <hr class="solid">
+        </div>
+
+        <!-- Soul Link -->
+        <div class="row align-items-center section-padding-sm">
+          <div class="col">
+              <h4>Soul Link</h4>
+              <p>This was a game jam submission I did during a holiday break. The theme for the jam was "Tied-together".</p>
+          </div>
+          <div class="col">
+            <div id="soul-link-game" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../resources/images/soul-link-splash.png" class="img-fluid image-colour" alt="Soul link 1"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/soul-link-gameplay-screenshot-1.png" class="img-fluid image-colour" alt="Soul link 2"/>
+                </div>
+                <div class="carousel-item">
+                  <img src="../../resources/images/soul-link-gameplay-screenshot-2.png" class="img-fluid image-colour" alt="Soul link 3"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-indicator" id="soul-link">
+              <button onclick="activateSlide('soul-link', this)" type="button" data-bs-target="#soul-link-game" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button onclick="activateSlide('soul-link', this)" data-bs-target="#soul-link-game" data-bs-slide-to="1" aria-current="false"></button>
+              <button onclick="activateSlide('soul-link', this)" data-bs-target="#soul-link-game" data-bs-slide-to="2" aria-current="false"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="container-fluid footer">
+      <span>&#169; Hsin Yi 2025</span>
+    </footer>
+  </body>
+</html>

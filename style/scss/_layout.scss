@@ -1,0 +1,39 @@
+.section-padding-banner{
+    height: 50vh;
+    align-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.section-padding-md{
+    padding: 40px 0px;
+    align-content: center;
+}
+
+.section-padding-lg{
+    padding: 50px 0px;
+    align-content: center;
+}
+
+.section-padding-sm{
+    padding: 35px 0px;
+}
+
+.col{
+    margin: 0px 25px;
+}
+
+.row{
+    width:100%;
+    margin:0;
+    padding:0;
+    
+    > .col:first-child{
+        margin-left: 8%;
+    }
+
+    > .col:last-child{
+        margin-right: 8%;
+    }
+}
+

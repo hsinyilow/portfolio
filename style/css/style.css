@@ -1,0 +1,142 @@
+.section-padding-banner {
+  height: 50vh;
+  align-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.section-padding-md {
+  padding: 40px 0px;
+  align-content: center;
+}
+
+.section-padding-lg {
+  padding: 50px 0px;
+  align-content: center;
+}
+
+.section-padding-sm {
+  padding: 35px 0px;
+}
+
+.col {
+  margin: 0px 25px;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.row > .col:first-child {
+  margin-left: 8%;
+}
+.row > .col:last-child {
+  margin-right: 8%;
+}
+
+.btn-purple {
+  background-color: #9067C6;
+  color: white;
+  border: 2px solid #9067C6;
+  border-radius: 15px;
+}
+.btn-purple:visited {
+  background-color: #9067C6;
+  color: white;
+  border: 2px solid #9067C6;
+  border-radius: 15px;
+}
+.btn-purple:hover, .btn-purple:focus {
+  background-color: #8D86C9;
+  color: white;
+  border-color: #8D86C9;
+}
+
+nav.bg-body-tertiary {
+  background-color: #2E3532 !important;
+}
+nav .nav-link {
+  color: white;
+}
+nav .nav-link:visited {
+  color: white;
+}
+nav .nav-link:hover, nav .nav-link:focus {
+  color: white;
+  text-decoration: underline;
+}
+nav .navbar-brand {
+  color: white;
+}
+nav .navbar-brand:hover, nav .navbar-brand:focus, nav .navbar-brand:visited {
+  color: white;
+  text-decoration: none;
+}
+nav .navbar-nav .nav-link.active {
+  color: white;
+  text-decoration: underline;
+}
+
+.divider {
+  padding: 25px;
+}
+.divider > hr {
+  margin: auto;
+  width: 36%;
+  color: #8D86C9;
+  border-top-width: 1.5px;
+}
+
+.footer {
+  background-color: #2E3532;
+  height: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  color: white;
+}
+
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicator > button {
+  width: calc(10% - 10px);
+  margin: 5px 10px;
+  border-radius: 15px;
+  padding: 2px;
+  border-color: #9067C6;
+  z-index: 100;
+}
+
+.carousel-indicator > button.active {
+  background-color: #9067C6;
+}
+
+img.image-colour {
+  border: 2px solid #9067C6;
+  border-radius: 10px;
+  box-shadow: rgba(34, 34, 34, 0.1294117647) 2px 2px;
+  max-height: 300px;
+}
+img.logo {
+  width: 50px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.background-grey {
+  background-color: #fbfbfb;
+}
+
+.background-tint {
+  background-color: #faf6ff;
+}
+
+/*# sourceMappingURL=style.css.map */
