@@ -110,3 +110,12 @@ iframe {
 .nav-toggle {
     width: 30px;
 }
+
+.contact {
+    a, a:visited {
+        color: $purple;
+    }
+    a:hover, a:focus {
+        color: $purple-hover;
+    }
+}

@@ -19,20 +19,17 @@
   padding: 35px 0px;
 }
 
-.col {
-  margin: 0px 25px;
+@media screen and (max-width: 576px) {
+  .col-12 {
+    padding: 10px 0px;
+  }
 }
-
 .row {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-.row > .col:first-child {
-  margin-left: 8%;
-}
-.row > .col:last-child {
-  margin-right: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .btn-purple {
@@ -133,6 +130,13 @@ iframe {
 
 .nav-toggle {
   width: 30px;
+}
+
+.contact a, .contact a:visited {
+  color: #9067C6;
+}
+.contact a:hover, .contact a:focus {
+  color: #8D86C9;
 }
 
 .background-grey {
